@@ -1,0 +1,225 @@
+body{
+    background-color: aqua;
+    margin : 0px;
+}
+
+nav{
+    height: 50px;
+    width: 100%;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    color : white;
+    padding: 2px 10px ;
+}
+
+nav div{
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+
+}
+
+.demoPic{
+    box-sizing: border-box;
+    width: 100%;
+    height: 450px;
+    opacity: 0.9;
+    padding:75px;
+    background-image: url("demoPic.jpg");
+    text-align: center;
+}
+
+.demoPic h1 , h2 , h3 {
+    opacity: 1;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.demoPic h1{
+    font-size: 70px;
+    color : brown;
+    animation: heading 2s ease-in-out;
+
+}
+
+.demoPic h2 , h3{
+    color : yellow;
+    font-size: 50px;
+    animation: heading2 2s ease-in-out;
+
+}
+
+@keyframes heading {
+    from {
+        transform: translateX(-800px); 
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes heading2 {
+    from {
+        transform: translateX(800px); 
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+.roomStatus{
+    height: 800px;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+.roomStatus > .card{
+    height: 300px;
+    width : 40%;
+}
+
+
+.card img{
+    height: 100%;
+    width: 100%;
+}
+
+.card h1 ,.card h2 ,.card button{
+    transform: translateY(-220px) ;
+    text-align: center;
+    z-index: 2;
+}
+
+.card button {
+    transform: translateY(-220px) translateX(10%);
+    width:80%;
+}
+
+
+
+.visible{
+    animation: slide ease-in 2s;
+}
+
+.lvisible{
+    animation: lslide ease-in 2s;
+}
+
+@keyframes slide {
+    from{
+    transform: translateX(-500px);
+    }
+    to{
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes lslide {
+    from{
+    transform: translateX(500px);
+    }
+    to{
+        transform: translateX(0);
+    }
+
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    height: 280px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 34px;
+    font-family: "Bebas Neue", sans-serif;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer div{
+    width: 33%;
+    text-align: center;
+}
+
+.footer img{
+    height: 280px;
+}
+
+.details{
+    padding: 20px;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.info{
+    
+    border: 3px solid #000; 
+    padding: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    height: 80px;
+    width: 45%;
+    border-color: black;
+    border-radius: 12px;
+}
+
+.form{
+    padding: 50px 30px;
+}
+
+.history{
+    box-sizing: border-box;
+}
+.historyDiv{
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    padding:20px 5px;
+}
+.historyDiv .heading{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    padding: 4px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    border: 4px solid black;
+}
+
+.historyDiv .heading div{
+    width : 20%;
+    text-align: center;
+}
+.historyDiv .history div{
+    text-align: center;
+    width : 20%;
+}
+.historyDiv .history{
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    padding: 4px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    border: 2px solid black;
+}
+#cnic{
+    /* padding-right: 59px; */
+}
